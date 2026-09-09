@@ -221,7 +221,7 @@ nav{
 .ti-tag{font-size:11px;color:rgba(255,255,255,0.35);background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:3px 9px;border-radius:5px}
 
 /* PROJECTS */
-#proj{background:var(--dark2)}
+#projects{background:var(--dark2)}
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
 .pc{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:all .25s}
 .pc:hover{border-color:rgba(245,166,35,0.4);transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,0.4)}
@@ -637,7 +637,7 @@ body.t-teal .da-badge{border-color:#2dd4bf}
     <a href="#hero" class="active">Home</a>
     <a href="#skills">Skills</a>
     <a href="#exp">Background</a>
-    <a href="#proj">Projects</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -661,14 +661,10 @@ body.t-teal .da-badge{border-color:#2dd4bf}
         I help people finding <em>insights</em><br>
         through <em>data</em>
       </p>
-      <div class="hero-btns">
-        <a href="#proj" class="btn-p">View Projects →</a>
-        <a href="#contact" class="btn-o" onclick="event.preventDefault();document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me Now</a>
-        <button onclick="downloadCV()" class="cv-download-btn">📄 Download CV</button>
-        <a href="Usama_Zaheer_CV_Updated.docx" target="_blank" rel="noopener" class="btn-resume">Download Resume (DOCX)</a>
-        <a href="/Usama_Zaheer_CV.pdf" download="Usama_Zaheer_CV.pdf" class="btn-primary">
-          <i class="fa-solid fa-download"></i> Download CV
-        </a>
+      <div class="hero-buttons hero-btns">
+        <a href="#projects" class="btn btn-p">View Projects &rarr;</a>
+        <a href="#contact" class="btn btn-o">Hire Me Now</a>
+        <a href="Usama_Arain_Resume.pdf" download class="btn btn-primary">Download Resume (PDF)</a>
       </div>
       <div class="hero-stats">
         <div><div class="sn">2<em>+</em></div><div class="sl">Years Exp</div></div>
@@ -884,7 +880,7 @@ body.t-teal .da-badge{border-color:#2dd4bf}
 <div class="hr"></div>
 
 <!-- PROJECTS -->
-<section id="proj" class="sec">
+<section id="projects" class="sec">
   <div class="si">
     <div class="stag fi">Portfolio</div>
     <h2 class="sh fi">Featured <em>Projects</em></h2>
@@ -1245,7 +1241,7 @@ function setT(t, btn) {
     el.style.background = th.bg;
     el.style.backgroundColor = th.bg;
   });
-  document.querySelectorAll('#proj').forEach(el => {
+  document.querySelectorAll('#projects').forEach(el => {
     el.style.background = th.bg2;
     el.style.backgroundColor = th.bg2;
   });
