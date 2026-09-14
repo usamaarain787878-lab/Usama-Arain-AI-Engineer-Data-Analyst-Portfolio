@@ -241,7 +241,24 @@ nav{
 .project-img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px;background:linear-gradient(135deg,#0f172a,#1e293b)}
 .project-img[hidden]{display:none}
 .btn-live,.btn-github{display:inline-block;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:600;font-size:12px;transition:all .2s}
-.btn-live{background:#38bdf8;color:#0f172a}
+.btn-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    transition: all 0.3s ease;
+}
+.btn-live:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+}
 .btn-github{border:1px solid #38bdf8;color:#38bdf8}
 .btn-live:hover,.btn-github:hover{transform:translateY(-2px)}
 
@@ -980,8 +997,8 @@ body.t-teal .da-badge{border-color:#2dd4bf}
         </div>
         <div class="pb" style="display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start">
           <div>
-            <div class="pn" style="font-size:18px">🌐 Data Science Portfolio App</div>
-            <div class="pd">Full-stack interactive Data Science app built with Streamlit & Python. Features real-time ML demos, data visualizations, and live predictions. Deployed on Streamlit Cloud!</div>
+            <div class="pn" style="font-size:18px"></div>
+            <div class="pd"></div>
             <div class="ps"><span>Streamlit</span><span>Python</span><span>Machine Learning</span><span>Data Viz</span><span>Cloud</span></div>
           </div>
           <div style="display:flex;flex-direction:column;gap:10px;min-width:150px">
@@ -993,7 +1010,7 @@ body.t-teal .da-badge{border-color:#2dd4bf}
 
       <div class="pc fi"><div class="pt" style="background:linear-gradient(135deg,#060f24,#0d1f40)">🎯</div><div class="pb"><img src="project1.png" alt="Project Screenshot" style="width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px"><div class="pn">Real-time Object Detection</div><div class="pd">YOLOv8 for real-time object detection in video streams. Optimized for edge deployment at 45 FPS.</div><div class="ps"><span>PyTorch</span><span>OpenCV</span><span>YOLOv8</span></div></div><div class="pf"><a href="https://github.com/usamaarain787878-lab" target="_blank" rel="noopener noreferrer" class="pl">GitHub → (91% mAP)</a></div></div>
 
-      <div class="pc fi" style="transition-delay:.07s"><div class="pt" style="background:linear-gradient(135deg,#061810,#0d2d1a)">🏙️</div><div class="pb"><div class="pn">🏙️ AI Smart Civic Services</div><div class="pd">Intelligent civic platform powered by AI. Automates citizen requests and smart complaint routing for government services.</div><div class="ps"><span>Python</span><span>AI/ML</span><span>NLP</span></div></div><div class="pf"><a href="https://github.com/usamaarain787878-lab" target="_blank" rel="noopener noreferrer" class="pl">GitHub → (NLP Powered)</a></div></div>
+      <div class="pc fi" style="transition-delay:.07s"><div class="pt" style="background:linear-gradient(135deg,#061810,#0d2d1a)">🏙️</div><div class="pb"><div class="pn">🏙️ AI Smart Civic Services</div><div class="pd">Automated categorization, priority routing, and statistical analytics platform for civic complaints.</div><div class="ps"><span>Python</span><span>AI/ML</span><span>NLP</span><span>Streamlit</span></div></div><div class="pf"><a href="https://ai-smart-civic-services-8tyokmkv6xglc6y8hdbbhr.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pl">🚀 View Live App</a></div></div>
 
       <div class="pc fi" style="transition-delay:.14s"><div class="pt" style="background:linear-gradient(135deg,#120820,#1e1038)">🧠</div><div class="pb"><div class="pn">Customer Segmentation ML</div><div class="pd">KMeans clustering on 10K+ records identifying high-value segments, improving campaign ROI by 23%.</div><div class="ps"><span>Scikit-learn</span><span>KMeans</span><span>PCA</span></div></div><div class="pf"><a href="https://github.com/usamaarain787878-lab" target="_blank" class="pl">GitHub →</a><span class="pm">10K records</span></div></div>
 
@@ -1066,8 +1083,8 @@ body.t-teal .da-badge{border-color:#2dd4bf}
       <div class="pc fi" style="transition-delay:.49s">
         <div class="pt" style="background:linear-gradient(135deg,#101827,#1d334d)">🚀</div>
         <div class="pb">
-          <div class="pn">Aapke Naye Project Ka Naam</div>
-          <div class="pd">Yahan apne project ki choti si description likhein (jaise Python, Streamlit, Machine Learning use kiya).</div>
+          <div class="pn"></div>
+          <div class="pd"></div>
         </div>
         <div class="pf">
           <span class="pm">New Project</span>
@@ -1648,3 +1665,5 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') closeCVModal();
 
 </body>
 </html><!-- CURRENT DEFAULT -->
+
+
