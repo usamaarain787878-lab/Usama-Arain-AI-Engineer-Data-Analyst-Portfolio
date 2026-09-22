@@ -238,6 +238,14 @@ nav{
 .impact-metric{color:#4ade80;font-weight:700;font-size:12px;margin-bottom:10px}
 .architecture-flow{background:#0f172a;padding:9px 12px;border-left:3px solid #38bdf8;font-family:'Fira Code',monospace;font-size:11px;line-height:1.6;color:#94a3b8;margin:12px 0 16px;overflow-x:auto;white-space:nowrap}
 .card-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.segmentation-card .segmentation-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.segmentation-card .segmentation-icon{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(56,189,248,0.1);color:#38bdf8;font-size:21px;flex-shrink:0}
+.segmentation-card .segmentation-category{font-size:11px;font-weight:600;padding:5px 10px;border-radius:999px;background:rgba(56,189,248,0.1);color:#38bdf8;border:1px solid rgba(56,189,248,0.2);white-space:nowrap}
+.segmentation-card .segmentation-highlights{list-style:none;display:grid;gap:7px;margin:0 0 18px;padding:0;color:#cbd5e1;font-size:11px}
+.segmentation-card .segmentation-highlights li{display:flex;align-items:flex-start;gap:8px}
+.segmentation-card .segmentation-highlights li::before{content:'';width:6px;height:6px;border-radius:50%;background:#38bdf8;flex:0 0 6px;margin-top:5px}
+.segmentation-card .segmentation-stack{display:flex;flex-wrap:wrap;gap:6px}
+.segmentation-card .segmentation-stack span{font-family:'Fira Code',monospace;font-size:10px;color:#cbd5e1;background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:4px 9px;border-radius:5px}
 .project-img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px;background:linear-gradient(135deg,#0f172a,#1e293b)}
 .project-img[hidden]{display:none}
 .btn-live,.btn-github{display:inline-block;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:600;font-size:12px;transition:all .2s}
@@ -1040,7 +1048,23 @@ body.t-teal .da-badge{border-color:#2dd4bf}
         </div>
       </div>
 
-      <div class="pc fi" style="transition-delay:.14s"><div class="pt" style="background:linear-gradient(135deg,#120820,#1e1038)">🧠</div><div class="pb"><div class="pn">Customer Segmentation ML</div><div class="pd">KMeans clustering on 10K+ records identifying high-value segments, improving campaign ROI by 23%.</div><div class="ps"><span>Scikit-learn</span><span>KMeans</span><span>PCA</span></div></div><div class="pf"><a href="https://github.com/usamaarain787878" target="_blank" rel="noopener noreferrer" class="pl">GitHub →</a><span class="pm">10K records</span></div></div>
+      <div class="pc fi segmentation-card" style="transition-delay:.14s">
+        <div class="pb">
+          <div class="segmentation-head">
+            <div class="segmentation-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></div>
+            <span class="segmentation-category">Machine Learning</span>
+          </div>
+          <div class="pn" style="font-size:18px">Customer Segmentation ML Platform</div>
+          <div class="pd">An advanced data-driven machine learning application designed to analyze customer behavior and group them into distinct segments. Helps businesses optimize marketing strategies and personalize customer engagement through automated data clustering.</div>
+          <ul class="segmentation-highlights">
+            <li>Unsupervised learning models for behavior-based clustering</li>
+            <li>Interactive data visualizations and insights dashboard</li>
+            <li>Deployed live with an intuitive Streamlit interface</li>
+          </ul>
+          <div class="segmentation-stack"><span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>Streamlit</span></div>
+        </div>
+        <div class="pf"><a href="https://customer-segmentation-ml-bdtzbarpzxypsbbtw9uhi3.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pl">View Live App <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+      </div>
 
       <div class="pc fi" style="transition-delay:.21s">
         <div class="pt" style="background:linear-gradient(135deg,#180808,#2a1010)">🔍</div>
