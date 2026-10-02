@@ -225,6 +225,52 @@ nav{
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
 .pc{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:all .25s}
 .pc:hover{border-color:rgba(245,166,35,0.4);transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,0.4)}
+
+.nexusguard-project{
+  background:linear-gradient(180deg, rgba(5,15,20,0.96), rgba(11,18,29,0.96));
+  border-color:rgba(16,185,129,0.38);
+  overflow:hidden;
+}
+.nexusguard-project:hover{
+  border-color:rgba(16,185,129,0.58);
+  box-shadow:0 24px 60px rgba(16,185,129,0.14);
+}
+.nexusguard-project .project-header{padding:24px 24px 0}
+.nexusguard-project .project-category{display:inline-block;margin-bottom:16px;padding:6px 12px;border-radius:999px;background:rgba(16,185,129,0.09);border:1px solid rgba(16,185,129,0.22);color:#6ee7b7;font-family:'Fira Code',monospace;font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase}
+.nexusguard-project .project-header h2{font-size:clamp(24px,2.7vw,36px);font-weight:800;letter-spacing:-1px;line-height:1.2;margin-bottom:10px}
+.nexusguard-project .project-subtitle{font-size:14px;line-height:1.8;color:var(--muted);margin-bottom:18px}
+.nexusguard-project .project-preview{padding:0 24px 18px}
+.nexusguard-project .preview-content{background:linear-gradient(135deg,rgba(6,78,59,0.55),rgba(15,23,42,0.78));border:1px solid rgba(110,231,183,0.18);border-radius:16px;padding:24px 22px;position:relative;overflow:hidden}
+.nexusguard-project .preview-content::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at top right, rgba(16,185,129,0.22), transparent 40%);pointer-events:none}
+.nexusguard-project .preview-badge{position:relative;display:inline-block;margin-bottom:14px;padding:7px 14px;border-radius:999px;background:rgba(16,185,129,0.1);border:1px solid rgba(110,231,183,0.28);color:#a7f3d0;font-family:'Fira Code',monospace;font-size:10px;letter-spacing:1.8px;text-transform:uppercase}
+.nexusguard-project .preview-content h3{position:relative;font-size:clamp(20px,2.2vw,30px);margin-bottom:10px}
+.nexusguard-project .preview-content p{position:relative;color:rgba(255,255,255,0.84);line-height:1.8;font-size:14px;margin:0}
+.nexusguard-project .project-features{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;padding:0 24px 18px}
+.nexusguard-project .feature{background:rgba(255,255,255,0.025);border:1px solid var(--border);border-radius:12px;padding:18px 14px;min-height:180px}
+.nexusguard-project .feature span{display:block;font-size:28px;margin-bottom:10px}
+.nexusguard-project .feature h4{font-size:15px;margin-bottom:8px;color:#fff}
+.nexusguard-project .feature p{font-size:12px;color:var(--muted);line-height:1.7}
+.nexusguard-project .project-stack{padding:0 24px 18px}
+.nexusguard-project .project-stack h3{font-size:18px;margin-bottom:12px}
+.nexusguard-project .tech-tags{display:flex;flex-wrap:wrap;gap:8px}
+.nexusguard-project .tech-tags span{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(80,145,255,0.08);border:1px solid rgba(96,165,250,0.22);color:#bfdbfe;font-family:'Fira Code',monospace;font-size:10px;letter-spacing:.4px}
+.nexusguard-project .project-architecture{padding:0 24px 18px}
+.nexusguard-project .project-architecture h3{font-size:18px;margin-bottom:12px}
+.nexusguard-project .project-architecture .architecture-flow{margin:0;display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:12px 14px;border-left:3px solid #34d399}
+.nexusguard-project .project-architecture .architecture-step{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06)}
+.nexusguard-project .project-architecture .architecture-step strong{color:#6ee7b7;font-size:11px}
+.nexusguard-project .project-architecture .architecture-step span{color:#dbeafe;font-size:11px}
+.nexusguard-project .project-architecture .arrow{color:#67e8f9;font-weight:700}
+.nexusguard-project .project-value{padding:0 24px 12px}
+.nexusguard-project .project-value h3{font-size:18px;margin-bottom:12px}
+.nexusguard-project .project-value ul{margin-left:18px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;color:var(--muted);font-size:13px;line-height:1.7}
+.nexusguard-project .project-actions{display:flex;flex-wrap:wrap;gap:12px;padding:0 24px 22px}
+.nexusguard-project .project-actions .btn-primary,.nexusguard-project .project-actions .btn-secondary{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:700;transition:all .2s}
+.nexusguard-project .project-actions .btn-primary{background:linear-gradient(135deg,#34d399,#10b981);color:#062d1d;box-shadow:0 10px 28px rgba(16,185,129,0.28)}
+.nexusguard-project .project-actions .btn-primary:hover{transform:translateY(-2px)}
+.nexusguard-project .project-actions .btn-secondary{background:transparent;border:1px solid rgba(148,163,184,0.45);color:#e2e8f0}
+.nexusguard-project .project-actions .btn-secondary:hover{border-color:rgba(52,211,153,0.7);color:#fff;transform:translateY(-2px)}
+
 .pt{height:130px;display:flex;align-items:center;justify-content:center;font-size:40px}
 .pb{padding:20px;flex:1;display:flex;flex-direction:column}
 .pn{font-size:15px;font-weight:700;margin-bottom:8px}
@@ -238,14 +284,19 @@ nav{
 .impact-metric{color:#4ade80;font-weight:700;font-size:12px;margin-bottom:10px}
 .architecture-flow{background:#0f172a;padding:9px 12px;border-left:3px solid #38bdf8;font-family:'Fira Code',monospace;font-size:11px;line-height:1.6;color:#94a3b8;margin:12px 0 16px;overflow-x:auto;white-space:nowrap}
 .card-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.segmentation-card{border-color:rgba(34,211,238,0.28)}
+.segmentation-card:hover{border-color:rgba(34,211,238,0.5);box-shadow:0 20px 50px rgba(34,211,238,0.12)}
 .segmentation-card .segmentation-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
-.segmentation-card .segmentation-icon{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(56,189,248,0.1);color:#38bdf8;font-size:21px;flex-shrink:0}
-.segmentation-card .segmentation-category{font-size:11px;font-weight:600;padding:5px 10px;border-radius:999px;background:rgba(56,189,248,0.1);color:#38bdf8;border:1px solid rgba(56,189,248,0.2);white-space:nowrap}
-.segmentation-card .segmentation-highlights{list-style:none;display:grid;gap:7px;margin:0 0 18px;padding:0;color:#cbd5e1;font-size:11px}
-.segmentation-card .segmentation-highlights li{display:flex;align-items:flex-start;gap:8px}
-.segmentation-card .segmentation-highlights li::before{content:'';width:6px;height:6px;border-radius:50%;background:#38bdf8;flex:0 0 6px;margin-top:5px}
-.segmentation-card .segmentation-stack{display:flex;flex-wrap:wrap;gap:6px}
+.segmentation-card .segmentation-icon{font-size:30px;line-height:1;flex-shrink:0}
+.segmentation-card .segmentation-live{color:#fbbf24;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;white-space:nowrap}
+.segmentation-card .segmentation-stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
 .segmentation-card .segmentation-stack span{font-family:'Fira Code',monospace;font-size:10px;color:#cbd5e1;background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:4px 9px;border-radius:5px}
+.segmentation-card .segmentation-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%}
+.segmentation-card .segmentation-action{justify-content:center;padding:10px 12px;border-radius:8px;transition:background .2s,transform .2s}
+.segmentation-card .segmentation-action.app{background:#22d3ee;color:#0f172a;font-weight:900;box-shadow:0 8px 20px rgba(34,211,238,0.5)}
+.segmentation-card .segmentation-action.app:hover{background:#67e8f9;transform:translateY(-2px)}
+.segmentation-card .segmentation-action.code{background:#0f172a;border:1px solid #334155;color:#22d3ee;box-shadow:0 4px 12px rgba(0,0,0,0.25)}
+.segmentation-card .segmentation-action.code:hover{background:#334155;transform:translateY(-2px)}
 .project-img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px;background:linear-gradient(135deg,#0f172a,#1e293b)}
 .project-img[hidden]{display:none}
 .btn-live,.btn-github{display:inline-block;padding:8px 14px;border-radius:6px;text-decoration:none;font-weight:600;font-size:12px;transition:all .2s}
@@ -767,12 +818,7 @@ body.t-teal .da-badge{border-color:#2dd4bf}
       <div class="hero-btns">
         <a href="#proj" class="btn-p">View Projects →</a>
         <a href="#contact" class="btn-o" onclick="event.preventDefault();document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me Now</a>
-        <a href="Usama_CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
-        <button onclick="downloadCV()" class="cv-download-btn">📄 Download CV</button>
-        <a href="Usama_Zaheer_CV_Updated.docx" target="_blank" rel="noopener" class="btn-resume">Download Resume (DOCX)</a>
-        <a href="/Usama_Zaheer_CV.pdf" download="Usama_Zaheer_CV.pdf" class="btn-primary">
-          <i class="fa-solid fa-download"></i> Download CV
-        </a>
+        <a href="Usama_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume">View CV</a>
       </div>
       <div class="hero-stats">
         <div><div class="sn">2<em>+</em></div><div class="sl">Years Exp</div></div>
@@ -995,6 +1041,109 @@ body.t-teal .da-badge{border-color:#2dd4bf}
           </div>
         </div>
       </div>
+
+      <div class="pc fi nexusguard-project" style="grid-column:1/-1">
+        <div class="project-header">
+          <span class="project-category">AI • Fraud Detection • Risk Intelligence • Cybersecurity</span>
+          <h2>NexusGuard Global — Enterprise AI Risk &amp; Fraud Intelligence</h2>
+          <p class="project-subtitle">An enterprise-focused AI risk intelligence platform designed to analyze financial risk, detect suspicious activity, generate explainable insights, and support security and fraud investigation workflows through an interactive intelligence dashboard.</p>
+        </div>
+
+        <div class="project-preview">
+          <div class="preview-content">
+            <div class="preview-badge">🛡️ LIVE AI RISK INTELLIGENCE PLATFORM</div>
+            <h3>AI-Powered Fraud &amp; Risk Intelligence</h3>
+            <p>NexusGuard combines machine learning, risk analytics, explainable AI, behavioral intelligence and security-focused workflows into a centralized enterprise dashboard.</p>
+          </div>
+        </div>
+
+        <div class="project-features">
+          <div class="feature"><span>🧠</span><h4>AI Risk Intelligence</h4><p>AI-driven analysis for identifying suspicious behavior, financial risk patterns and high-risk activities.</p></div>
+          <div class="feature"><span>🚨</span><h4>Fraud Detection</h4><p>Risk-based transaction analysis designed to help identify potentially fraudulent and abnormal activity.</p></div>
+          <div class="feature"><span>🔍</span><h4>Explainable AI</h4><p>Provides interpretable risk factors and feature-level insights so analysts can understand why an activity was flagged.</p></div>
+          <div class="feature"><span>🛡️</span><h4>Security Intelligence</h4><p>Security-focused intelligence covering suspicious sessions, devices, behavioral signals and risk indicators.</p></div>
+          <div class="feature"><span>🌍</span><h4>Global Risk Architecture</h4><p>Designed with multi-region, multi-industry and localization concepts for broader enterprise use cases.</p></div>
+          <div class="feature"><span>📊</span><h4>Executive Analytics</h4><p>Centralized dashboards provide a high-level view of risk, fraud activity, alerts and intelligence signals.</p></div>
+          <div class="feature"><span>👥</span><h4>Role-Based Intelligence</h4><p>Supports enterprise-oriented access and operational workflows for different types of users and security teams.</p></div>
+          <div class="feature"><span>📋</span><h4>Risk &amp; Audit Workflows</h4><p>Structured risk records, investigation information and operational telemetry help support auditable workflows.</p></div>
+        </div>
+
+        <div class="project-stack">
+          <h3>Technology Stack</h3>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Artificial Intelligence</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Scikit-Learn</span>
+            <span>Explainable AI</span>
+            <span>Streamlit</span>
+            <span>FastAPI</span>
+            <span>REST API</span>
+            <span>Plotly</span>
+            <span>Risk Analytics</span>
+            <span>Fraud Detection</span>
+            <span>Cybersecurity</span>
+          </div>
+        </div>
+
+        <div class="project-architecture">
+          <h3>System Architecture</h3>
+          <div class="architecture-flow">
+            <div class="architecture-step"><strong>01</strong><span>Data Input</span></div>
+            <div class="arrow">→</div>
+            <div class="architecture-step"><strong>02</strong><span>Data Processing</span></div>
+            <div class="arrow">→</div>
+            <div class="architecture-step"><strong>03</strong><span>AI Risk Analysis</span></div>
+            <div class="arrow">→</div>
+            <div class="architecture-step"><strong>04</strong><span>Fraud Detection</span></div>
+            <div class="arrow">→</div>
+            <div class="architecture-step"><strong>05</strong><span>XAI Explanation</span></div>
+            <div class="arrow">→</div>
+            <div class="architecture-step"><strong>06</strong><span>Risk Intelligence</span></div>
+          </div>
+        </div>
+
+        <div class="project-value">
+          <h3>Business Use Cases</h3>
+          <ul>
+            <li>Financial fraud and suspicious transaction analysis</li>
+            <li>Enterprise risk monitoring</li>
+            <li>Customer and behavioral risk intelligence</li>
+            <li>Security and device intelligence</li>
+            <li>Fraud investigation and analyst workflows</li>
+            <li>Executive risk monitoring and reporting</li>
+          </ul>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://nexusguard-global-enterprise-ai-risk-fraud-intelligence-p2x93b.streamlit.app/" target="_blank" class="btn-primary">🚀 Live Demo</a>
+          <a href="https://github.com/usamaarain787878-lab" target="_blank" class="btn-secondary">💻 GitHub</a>
+        </div>
+      </div>
+
+      <div class="pc fi" style="border-color:rgba(59,130,246,0.45);grid-column:1/-1">
+        <div class="pt" style="background:linear-gradient(135deg,#061a24,#102a3d);height:160px;position:relative;flex-direction:column;gap:10px">
+          <span style="font-size:48px;position:relative;z-index:1">🛡️</span>
+          <span style="font-family:'Fira Code',monospace;font-size:11px;color:#7dd3fc;letter-spacing:2px;position:relative;z-index:1">ENTERPRISE FRAUD INTELLIGENCE</span>
+          <div style="position:absolute;top:14px;right:14px;background:#00ff88;color:#000;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px;font-family:'Fira Code',monospace">● LIVE</div>
+          <div style="position:absolute;top:14px;left:14px;background:rgba(125,211,252,0.12);border:1px solid rgba(125,211,252,0.3);color:#7dd3fc;font-size:11px;font-weight:600;padding:4px 12px;border-radius:50px">⭐ Featured</div>
+        </div>
+        <div class="pb" style="display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start">
+          <div>
+            <div class="pn" style="font-size:18px">Enterprise Global Fraud Intelligence &amp; Risk Management Platform</div>
+            <div class="impact-metric">⚡ Fintech Compliance | AI Risk Scoring | Automated Anti-Scam Monitoring</div>
+            <div class="pd">A production-ready Enterprise Global Fraud Intelligence SaaS designed for fintech compliance, risk analysis, and automated anti-scam monitoring featuring Biometric Security Gateway, AI-Driven Risk Scoring, and Dynamic Analytics Dashboards.</div>
+            <div class="architecture-flow"><code>Biometric Gateway ➔ Risk Engine ➔ AI Scoring ➔ Compliance Dashboards ➔ Fraud Alerts</code></div>
+            <div class="ps"><span>Streamlit</span><span>Python</span><span>AI Risk Scoring</span><span>Fraud Analytics</span><span>Fintech Compliance</span></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;min-width:160px">
+            <a href="https://enterprise-global-fraud-intelligence-saas-hphmdgaoazepfj55jc3u.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn-live" style="text-align:center;justify-content:center">🚀 Live Demo</a>
+            <a href="https://github.com/usamaarain787878-lab" target="_blank" rel="noopener noreferrer" class="btn-github" style="text-align:center;justify-content:center">💻 GitHub</a>
+          </div>
+        </div>
+      </div>
       <!-- LIVE FEATURED -->
       <div class="pc fi" style="border-color:rgba(245,166,35,0.4);grid-column:1/-1">
         <div class="pt" style="background:linear-gradient(135deg,#0f0a00,#1e1400);height:160px;position:relative;flex-direction:column;gap:10px">
@@ -1051,19 +1200,14 @@ body.t-teal .da-badge{border-color:#2dd4bf}
       <div class="pc fi segmentation-card" style="transition-delay:.14s">
         <div class="pb">
           <div class="segmentation-head">
-            <div class="segmentation-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></div>
-            <span class="segmentation-category">Machine Learning</span>
+            <div class="segmentation-icon" aria-hidden="true">📊</div>
+            <span class="segmentation-live">Live Demo Available</span>
           </div>
           <div class="pn" style="font-size:18px">Customer Segmentation ML Platform</div>
-          <div class="pd">An advanced data-driven machine learning application designed to analyze customer behavior and group them into distinct segments. Helps businesses optimize marketing strategies and personalize customer engagement through automated data clustering.</div>
-          <ul class="segmentation-highlights">
-            <li>Unsupervised learning models for behavior-based clustering</li>
-            <li>Interactive data visualizations and insights dashboard</li>
-            <li>Deployed live with an intuitive Streamlit interface</li>
-          </ul>
-          <div class="segmentation-stack"><span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>Streamlit</span></div>
+          <div class="segmentation-stack"><span>Streamlit</span><span>Python</span><span>Machine Learning</span><span>Data Viz</span></div>
+          <div class="pd">Real-time customer segmentation web application built with Machine Learning and Streamlit.</div>
         </div>
-        <div class="pf"><a href="https://customer-segmentation-ml-bdtzbarpzxypsbbtw9uhi3.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pl">View Live App <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+        <div class="pf"><div class="segmentation-actions"><a href="https://customer-segmentation-ml-bdtzbarpzxypsbbtw9uhi3.streamlit.app/" target="_blank" rel="noopener noreferrer" class="pl segmentation-action app"><span>🚀 Open App</span></a><a href="https://github.com/usamaarain787878-lab" target="_blank" rel="noopener noreferrer" class="pl segmentation-action code"><span>💻 Code</span></a></div></div>
       </div>
 
       <div class="pc fi" style="transition-delay:.21s">
@@ -1074,6 +1218,30 @@ body.t-teal .da-badge{border-color:#2dd4bf}
           <div class="ps"><span>Python</span><span>XGBoost</span><span>Pandas</span></div>
         </div>
         <div class="pf"><a href="https://github.com/usamaarain787878" target="_blank" rel="noopener noreferrer" class="pl">GitHub →</a></div>
+      </div>
+
+      <!-- GLOBAL ENTERPRISE AI SAAS — LIVE -->
+      <div class="pc fi" style="border-color:rgba(245,166,35,0.4);transition-delay:.35s;grid-column:1/-1">
+        <div class="pt" style="background:linear-gradient(135deg,#0a0015,#1a0030);height:160px;position:relative;flex-direction:column;gap:10px">
+          <span style="font-size:48px;position:relative;z-index:1">🏢</span>
+          <span style="font-family:'Fira Code',monospace;font-size:11px;color:rgba(245,166,35,0.6);letter-spacing:2px;position:relative;z-index:1">LIVE ON STREAMLIT CLOUD</span>
+          <div style="position:absolute;top:14px;right:14px;background:#00ff88;color:#000;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px;font-family:'Fira Code',monospace">● LIVE</div>
+          <div style="position:absolute;top:14px;left:14px;background:rgba(245,166,35,0.15);border:1px solid rgba(245,166,35,0.3);color:var(--accent);font-size:11px;font-weight:600;padding:4px 12px;border-radius:50px">⚡ Enterprise AI Platform</div>
+        </div>
+        <div class="pb" style="display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start">
+          <div>
+            <div class="pn" style="font-size:18px">🏢 Global Enterprise AI SaaS Platform</div>
+            <div class="pd">Next-Gen Enterprise AI SaaS platform featuring RFM Customer Intelligence, Multi-Agent AI Marketing Copilot, Predictive Analytics, CLV Modeler, ROI Simulator, Batch CSV Scoring, and Interactive Plotly Dashboards. Built for C-Suite decision making.</div>
+            <div class="ps">
+              <span>Python</span><span>Streamlit</span><span>KMeans</span>
+              <span>Plotly</span><span>Multi-Agent AI</span><span>RFM Analytics</span><span>CLV Modeling</span>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px;min-width:155px">
+            <a href="https://global-enterprise-ai-saas-platform-ehchsdwtnu6s7ljbvymz7k.streamlit.app/" target="_blank" class="btn-p" style="text-align:center;font-size:13px;padding:11px 20px">🚀 Open App</a>
+            <a href="https://github.com/usamaarain787878-lab" target="_blank" class="btn-o" style="text-align:center;font-size:13px;padding:11px 20px">⑂ Code</a>
+          </div>
+        </div>
       </div>
 
       <div class="pc fi" style="transition-delay:.28s">
