@@ -338,6 +338,15 @@ nav{
 .cm{display:flex;gap:8px;flex-wrap:wrap}
 .cbdg{font-family:'Fira Code',monospace;font-size:11px;color:var(--accent);background:rgba(245,166,35,0.08);border:1px solid rgba(245,166,35,0.2);padding:3px 10px;border-radius:5px}
 .cd{font-size:11px;color:var(--muted);margin-top:8px}
+.cert-banner{display:flex;align-items:flex-end;min-height:180px;padding:22px 20px;background:linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));border-bottom:1px solid var(--border)}
+.cert-banner-inner{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:rgba(15,23,42,0.5);border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(8px)}
+.cert-banner-label{font-size:10px;letter-spacing:1.8px;text-transform:uppercase;color:var(--accent);font-family:'Fira Code',monospace;font-weight:600}
+.cert-banner-title{font-size:26px;font-weight:800;letter-spacing:-1px;color:#fff}
+.cert-banner.saylani{background:linear-gradient(135deg, rgba(79,70,229,0.22), rgba(7,89,133,0.15));}
+.cert-banner.cisco{background:linear-gradient(135deg, rgba(14,165,233,0.2), rgba(2,132,199,0.12));}
+.cert-banner.muet{background:linear-gradient(135deg, rgba(16,185,129,0.18), rgba(13,148,136,0.12));}
+.cert-image{display:block;width:100%;height:180px;object-fit:cover;border-bottom:1px solid var(--border);background:linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));}
+.cert-meta{font-size:11px;color:var(--muted);margin:10px 0 8px;line-height:1.6}
 
 /* CONTACT */
 #contact{background:var(--dark2)}
@@ -1350,60 +1359,48 @@ body.t-teal .da-badge{border-color:#2dd4bf}
 
     <div class="cg">
       <div class="cc fi" onclick="openCertModal('saylani')" title="Click to view certificate" style="cursor:pointer">
-        <div class="ct">
-          <div class="cl" style="background:linear-gradient(135deg,#1a3a6b,#2563eb)">🎓</div>
-          <div>
-            <div class="ci">Saylani IT Training</div>
-            <div class="co">Artificial Intelligence & Data Science</div>
-          </div>
-        </div>
+        <img src="images/cert-desk.jpg" alt="Professional Certificate Presentation" class="cert-image">
         <div class="cb">
-          <div class="cn">AI & Data Science — Batch 3</div>
+          <div class="ci">Saylani IT Training</div>
+          <div class="cn">Artificial Intelligence & Data Science</div>
+          <div class="cert-meta">Duration: 14 Months · Batch-3</div>
           <div class="cm">
             <span class="cbdg">AI</span>
+            <span class="cbdg">ML</span>
             <span class="cbdg">Data Science</span>
-            <span class="cbdg">14 Months</span>
           </div>
-          <p class="cd">Comprehensive training in AI methodologies, ML pipelines, and advanced analytics.</p>
+          <p class="cd">Comprehensive training covering AI methodologies, machine learning pipelines, and advanced analytics.</p>
           <div class="view-cert-hint">👆 Click to view certificate</div>
         </div>
       </div>
 
       <div class="cc fi" onclick="openCertModal('cisco')" title="Click to view certificate" style="cursor:pointer">
-        <div class="ct">
-          <div class="cl cisco">🌐</div>
-          <div>
-            <div class="ci">Cisco Networking Academy</div>
-            <div class="co">Saylani Welfare International Trust</div>
-          </div>
-        </div>
+        <img src="images/cert-desk.jpg" alt="Professional Certificate Presentation" class="cert-image">
         <div class="cb">
+          <div class="ci">Cisco Networking Academy</div>
           <div class="cn">Introduction to Modern AI</div>
+          <div class="cert-meta">Offered by Saylani Welfare International Trust</div>
           <div class="cm">
             <span class="cbdg">Artificial Intelligence</span>
             <span class="cbdg">Cisco</span>
           </div>
-          <p class="cd">Focused on modern AI concepts, intelligent systems, and practical integration principles.</p>
+          <p class="cd">Focused on modern AI concepts, practical frameworks, and intelligent systems integration.</p>
           <div class="view-cert-hint">👆 Click to view certificate</div>
         </div>
       </div>
 
       <div class="cc fi" onclick="openCertModal('muet')" title="Click to view certificate" style="cursor:pointer">
-        <div class="ct">
-          <div class="cl" style="background:linear-gradient(135deg,#1a5276,#2e86c1)">🎓</div>
-          <div>
-            <div class="ci">Mehran University (MUET)</div>
-            <div class="co">PITP-II Programme</div>
-          </div>
-        </div>
+        <img src="images/cert-desk.jpg" alt="Professional Certificate Presentation" class="cert-image">
         <div class="cb">
+          <div class="ci">Mehran University (MUET)</div>
           <div class="cn">Certified Python Developer</div>
+          <div class="cert-meta">PITP-II Programme · Sindh Government</div>
           <div class="cm">
             <span class="cbdg">Python</span>
             <span class="cbdg">MUET</span>
             <span class="cbdg">PITP-II</span>
           </div>
-          <p class="cd">Advanced training focused on Python logic, application building, and real-world coding practice.</p>
+          <p class="cd">Advanced training focused on Python logic, scripting, and application development using real-world workflows.</p>
           <div class="view-cert-hint">👆 Click to view certificate</div>
         </div>
       </div>
