@@ -322,7 +322,7 @@ nav{
 
 /* CERTS */
 #certs{background:var(--dark)}
-.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px}
 .cc{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:all .22s}
 .cc:hover{border-color:rgba(245,166,35,0.35);transform:translateY(-4px)}
 .ct{padding:18px 20px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
@@ -345,8 +345,9 @@ nav{
 .cert-banner.saylani{background:linear-gradient(135deg, rgba(79,70,229,0.22), rgba(7,89,133,0.15));}
 .cert-banner.cisco{background:linear-gradient(135deg, rgba(14,165,233,0.2), rgba(2,132,199,0.12));}
 .cert-banner.muet{background:linear-gradient(135deg, rgba(16,185,129,0.18), rgba(13,148,136,0.12));}
-.cert-image{display:block;width:100%;height:180px;object-fit:cover;border-bottom:1px solid var(--border);background:linear-gradient(135deg, rgba(99,102,241,0.12), rgba(14,165,233,0.08));}
-.cert-meta{font-size:11px;color:var(--muted);margin:10px 0 8px;line-height:1.6}
+.cert-image{display:block;width:100%;height:240px;object-fit:contain;padding:10px;border-bottom:1px solid var(--border);background:#fafafa;}
+.cert-meta{font-size:12px;color:var(--muted);margin:10px 0 8px;line-height:1.6}
+.cert-meta strong{color:#fff}
 
 /* CONTACT */
 #contact{background:var(--dark2)}
@@ -1354,53 +1355,33 @@ body.t-teal .da-badge{border-color:#2dd4bf}
 <section id="certs" class="sec">
   <div class="si">
     <div class="stag fi">Credentials</div>
-    <h2 class="sh fi">Certificates & <em>Credentials</em></h2>
+    <h2 class="sh fi">My <em>Certifications</em></h2>
     <p class="ss fi">Professional certifications validating expertise in AI, Data Science, and Software Development.</p>
 
     <div class="cg">
       <div class="cc fi" onclick="openCertModal('saylani')" title="Click to view certificate" style="cursor:pointer">
-        <img src="images/cert-desk.jpg" alt="Professional Certificate Presentation" class="cert-image">
+        <img data-certificate="saylani" alt="SMIT Artificial Intelligence &amp; Data Science Certificate" class="cert-image" loading="lazy">
         <div class="cb">
-          <div class="ci">Saylani IT Training</div>
           <div class="cn">Artificial Intelligence & Data Science</div>
-          <div class="cert-meta">Duration: 14 Months · Batch-3</div>
-          <div class="cm">
-            <span class="cbdg">AI</span>
-            <span class="cbdg">ML</span>
-            <span class="cbdg">Data Science</span>
-          </div>
-          <p class="cd">Comprehensive training covering AI methodologies, machine learning pipelines, and advanced analytics.</p>
+          <p class="cert-meta"><strong>Usama Zaheer</strong><br>Saylani Mass IT Training (14 Months)</p>
           <div class="view-cert-hint">👆 Click to view certificate</div>
         </div>
       </div>
 
       <div class="cc fi" onclick="openCertModal('cisco')" title="Click to view certificate" style="cursor:pointer">
-        <img src="images/cert-desk.jpg" alt="Professional Certificate Presentation" class="cert-image">
+        <img data-certificate="cisco" alt="Cisco Introduction to Modern AI Certificate" class="cert-image" loading="lazy">
         <div class="cb">
-          <div class="ci">Cisco Networking Academy</div>
           <div class="cn">Introduction to Modern AI</div>
-          <div class="cert-meta">Offered by Saylani Welfare International Trust</div>
-          <div class="cm">
-            <span class="cbdg">Artificial Intelligence</span>
-            <span class="cbdg">Cisco</span>
-          </div>
-          <p class="cd">Focused on modern AI concepts, practical frameworks, and intelligent systems integration.</p>
+          <p class="cert-meta"><strong>Usama Arain</strong><br>Cisco Networking Academy &amp; Saylani Welfare</p>
           <div class="view-cert-hint">👆 Click to view certificate</div>
         </div>
       </div>
 
       <div class="cc fi" onclick="openCertModal('muet')" title="Click to view certificate" style="cursor:pointer">
-        <img src="images/cert-desk.jpg" alt="Professional Certificate Presentation" class="cert-image">
+        <img data-certificate="muet" alt="PITP-II Certified Python Developer Certificate" class="cert-image" loading="lazy">
         <div class="cb">
-          <div class="ci">Mehran University (MUET)</div>
           <div class="cn">Certified Python Developer</div>
-          <div class="cert-meta">PITP-II Programme · Sindh Government</div>
-          <div class="cm">
-            <span class="cbdg">Python</span>
-            <span class="cbdg">MUET</span>
-            <span class="cbdg">PITP-II</span>
-          </div>
-          <p class="cd">Advanced training focused on Python logic, scripting, and application development using real-world workflows.</p>
+          <p class="cert-meta"><strong>Usama Zaheer</strong><br>PITP-II | Mehran University &amp; Govt of Sindh</p>
           <div class="view-cert-hint">👆 Click to view certificate</div>
         </div>
       </div>
@@ -1791,6 +1772,10 @@ const CERTS = {
   }
 };
 
+document.querySelectorAll('.cert-image[data-certificate]').forEach(img => {
+  img.src = CERTS[img.dataset.certificate].img;
+});
+
 function openCertModal(key) {
   const cert = CERTS[key];
   if(!cert) return;
@@ -1876,5 +1861,3 @@ document.addEventListener('keydown', e => { if(e.key==='Escape') closeCVModal();
 
 </body>
 </html><!-- CURRENT DEFAULT -->
-
-
